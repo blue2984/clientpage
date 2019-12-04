@@ -102,8 +102,6 @@ class KeywordResult extends React.Component
     }
     
     getSorting(order, orderBy) {
-        let result = order === 'desc' ? (a, b) => this.desc(a, b, orderBy) : (a, b) => -this.desc(a, b, orderBy);
-
         return order === 'desc' ? (a, b) => this.desc(a, b, orderBy) : (a, b) => -this.desc(a, b, orderBy);
     }
 
